@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background - Soft Gradient with Paw Print Pattern */
+body {
+  font-family: 'Patrick Hand', cursive;
+  background: radial-gradient(circle at center, #ffdde1, #ee9ca7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures it covers the full screen */
+  padding: 40px 20px; /* Adds spacing on smaller screens */
+}
+
+/* Card Container */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px; /* More space inside */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  margin: 40px 0; /* Adds space above and below */
+}
+
+/* Title */
+h2 {
+  font-family: 'Lobster', cursive;
+  color: #e76f51;
+  font-size: 28px;
+  margin-bottom: 15px; /* More space below title */
+  text-shadow: 2px 2px 8px rgba(231, 111, 81, 0.3);
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin: 15px 0; /* Space between paragraphs */
+}
+
+/* Links */
+a {
+  color: #e76f51;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff5733;
+  text-decoration: underline;
+}
+
+/* Cat Image */
+.cat-image {
+  width: 120px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0; /* Adds spacing around image */
+}
+
+.cat-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* List Styles */
+ul,
+ol {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 16px;
+  margin: 15px 0; /* Adds space around lists */
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px; /* Space above form */
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #e76f51;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+/* Paw Button */
+.paw-button {
+  background: #e76f51;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  margin-top: 20px; /* Adds space above the button */
+  margin-bottom: 20px; /* Adds space below the button */
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.paw-button::after {
+  content: '🐾';
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.paw-button:hover {
+  background: #ff5733;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  margin-top: 25px; /* More space above footer */
+  font-size: 14px;
+  color: #666;
+}
